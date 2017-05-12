@@ -1,0 +1,1008 @@
+/*
+
+Theme Name: Suzuki
+Theme URI: https://github.com/strangemethod
+Author: Andrew Bowles
+Author URI: http://www.andrewbowles.com
+Description: Minimalist, unobtrusive Wordpress starter theme.
+Version: 1.0.0
+ 
+"In the beginner's mind there are many possibilities, in the expert's midn there are few."
+	--Shunryu Suzuki
+
+*/
+
+
+
+
+ul {
+	margin: 0;
+}
+
+p {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h1, h2, h3 {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif, sans-serif;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 27.2px;
+	font-size: 1.7rem;
+	margin: 0.67em 0;
+}
+
+h2 {
+	font-size: 24px;
+	font-size: 1.5rem;
+	margin: 0.67em 0;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #FFF;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+mark, ins {
+	background: #FFF;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: #FFF;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+hr {
+	background-color: #FFF;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+ul li {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #000;
+	border-radius: 3px;
+	background: #FFF;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1;
+	padding: .6em 1em .4em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #FFF;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+input[type="button"]:active, input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #000;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #000;
+}
+
+select {
+	border: 1px solid #000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"] {
+	padding: 3px;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+.content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.component {
+	padding: 40px 0 53px;
+}
+
+.block-link {
+	background: #FCA311;
+	color: #000;
+	display: inline-block;
+	padding: 10px;
+}
+
+.block-image {
+	margin: 1.5em 0;
+}
+
+/* 
+ * ==================================
+ * tablet & desktop
+ * ==================================
+ */
+@media screen and (min-width: 768px) {
+	.content {
+		text-align: initial;
+		padding: 0 60px;
+	}
+
+	.component {
+		padding: 60px 0 94px;
+	}
+}
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid {
+	margin: 0 0 20px 0;
+}
+.grid:after {
+	/* Or @extend clearfix */
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.col-2-3, .col-1-3, .col-1-2, .col-4-10 {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.col-2-3, .col-1-3 {
+		width: 50%;
+	}
+
+	.col-1-2 {
+		width: 50%;
+		padding-right: 0;
+	}
+
+	.col-4-10 {
+		width: 40%;
+		margin-left: 10%;
+		padding-right: 0;
+	}
+
+	.col-1-2, .col-4-10 {
+		margin-bottom: 40px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.col-2-3 {
+		width: 66.66%;
+	}
+
+	.col-1-3 {
+		width: 33.33%;
+	}
+}
+.masonry-grid .grid-item {
+	margin-bottom: 20px;
+}
+
+#sticky-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100vw;
+	height: 54px;
+	background-color: #1C2541;
+	border-bottom: 1px solid #e5e5e5;
+	transition: background-color 0.5s ease;
+	/* 
+	 * ==================================
+	 * tablet & desktop
+	 * ==================================
+	 */
+}
+#sticky-nav.hero-nav {
+	background-color: rgba(8, 46, 129, 0.8);
+}
+#sticky-nav a {
+	cursor: pointer;
+}
+#sticky-nav .content {
+	color: #FFF;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif, sans-serif;
+	text-transform: uppercase;
+	padding: 0 20px;
+}
+#sticky-nav .content h1 {
+	display: inline-block;
+	margin: 0;
+	line-height: 54px;
+	font-size: 1.5rem;
+	position: relative;
+	z-index: 9;
+}
+#sticky-nav .content h1 a {
+	color: #FFF;
+}
+#sticky-nav .content a {
+	color: #1C2541;
+	text-decoration: none;
+}
+#sticky-nav .content nav {
+	font-size: 0;
+	overflow: hidden;
+	transition: right 0.5s ease;
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	right: -100%;
+	background: #e5e5e5;
+	height: 100%;
+}
+#sticky-nav .content nav ul li {
+	display: block;
+	border-bottom: 1px solid #1C2541;
+}
+#sticky-nav .content nav ul li a {
+	display: block;
+	padding: 10px 15px;
+	letter-spacing: 1px;
+}
+#sticky-nav .content nav ul li a.selected {
+	background-color: #FCA311;
+}
+#sticky-nav .content nav.visible {
+	right: -30px;
+}
+#sticky-nav .content #navicon {
+	color: #FFF;
+	font-size: 24px;
+	font-family: sans-serif;
+	position: absolute;
+	right: 15px;
+	line-height: 53px;
+	cursor: pointer;
+}
+#sticky-nav #nav-overlay {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #1C2541;
+	pointer-events: none;
+}
+#sticky-nav #nav-overlay.visible {
+	opacity: .9;
+}
+@media screen and (min-width: 768px) {
+	#sticky-nav {
+		height: 94px;
+	}
+	#sticky-nav .content {
+		padding: 0 60px;
+		height: 100%;
+	}
+	#sticky-nav .content h1 {
+		line-height: 94px;
+		font-size: 1.7rem;
+		padding: 0;
+	}
+	#sticky-nav .content nav {
+		display: inline-block;
+		max-height: 94px;
+		position: absolute;
+		right: 60px;
+		width: auto;
+		background: transparent;
+	}
+	#sticky-nav .content nav ul {
+		margin: 0;
+		line-height: 94px;
+	}
+	#sticky-nav .content nav ul li {
+		display: inline-block;
+		background: none;
+		border-bottom: none;
+		padding: 0;
+		letter-spacing: 0;
+	}
+	#sticky-nav .content nav ul li a {
+		line-height: 94px;
+		padding: 0 10px;
+		display: block;
+		color: #FFF;
+	}
+	#sticky-nav .content nav ul li a.selected {
+		background-color: #FCA311;
+	}
+	#sticky-nav .content nav ul li a.selected:hover {
+		color: #FFF;
+	}
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+	#sticky-nav .content nav ul li a {
+		padding: 0 20px;
+	}
+}
+@media screen and (min-width: 768px) {
+	#sticky-nav .content nav ul li a:hover {
+		color: #FCA311;
+	}
+	#sticky-nav .content #navicon {
+		display: none;
+	}
+}
+
+.component.hero {
+	width: 100%;
+	height: 66vw;
+	max-height: 800px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	padding: 0;
+	margin-top: 53px;
+	/* 
+	 * ==================================
+	 * tablet & desktop
+	 * ==================================
+	 */
+}
+@media screen and (min-width: 768px) {
+	.component.hero {
+		margin-top: 0;
+	}
+}
+
+.component.bio {
+	background-color: #e5e5e5;
+	/* 
+	 * ==================================
+	 * tablet & desktop
+	 * ==================================
+	 */
+}
+.component.bio .quote {
+	font-family: 'Cardo';
+	font-size: 18px;
+	line-height: 24px;
+}
+@media screen and (min-width: 768px) {
+	.component.bio .content {
+		text-align: initial;
+		padding: 0 60px;
+	}
+	.component.bio .quote {
+		font-size: 24px;
+		line-height: 30px;
+		font-style: italic;
+	}
+}
+
+.component.contact {
+	width: 100%;
+	height: 56vw;
+	min-height: 480px;
+	padding: 0;
+	/* 
+	 * ==================================
+	 * mobile
+	 * ==================================
+	 */
+}
+.component.contact .bg-img {
+	height: 100%;
+	max-height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: center;
+	background-position-x: center;
+}
+.component.contact .overlay {
+	height: 100%;
+	background: rgba(8, 46, 129, 0.5);
+}
+.component.contact .content {
+	color: #FFF;
+	padding: 60px 40px;
+}
+.component.contact a.contact {
+	font-size: 1em;
+	color: #FCA311;
+}
+.component.contact .instagram {
+	position: relative;
+	display: block;
+	color: #FFF;
+}
+.component.contact .instagram svg {
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+}
+.component.contact .instagram span {
+	top: 19px;
+	position: absolute;
+	margin-left: 10px;
+}
+.component.contact .endorsements li {
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+.component.contact .endorsements li a {
+	color: #FCA311;
+}
+@media screen and (max-width: 768px) {
+	.component.contact {
+		height: auto;
+	}
+	.component.contact .bg-img {
+		background: none !important;
+	}
+}
+
+.component.gigs {
+	background-image: linear-gradient(#3A506B, #1C2541);
+	color: #FFF;
+	/* 
+	 * ==================================
+	 * tablet & desktop
+	 * ==================================
+	 */
+}
+.component.gigs .gig_link {
+	display: block;
+	background: #FCA311;
+	color: #000;
+	font-size: 16px;
+	margin-bottom: 20px;
+	line-height: 24px;
+	padding: 20px;
+}
+.component.gigs .gig_link:hover {
+	text-decoration: underline;
+}
+.component.gigs h1 {
+	padding: 0 10px;
+}
+.component.gigs h2 span {
+	font-size: 16px;
+	display: block;
+}
+@media screen and (min-width: 768px) {
+	.component.gigs .gig_link {
+		padding: 0 20px;
+		line-height: 68px;
+	}
+}
+
+.component.photos {
+	background: #e5e5e5;
+}
+.component.photos img {
+	width: 100%;
+}
+.component.photos .slick-dots {
+	padding: 0;
+	margin: 10px 0;
+	text-align: center;
+}
+.component.photos .slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.component.photos .slick-dots li button {
+	font-size: 0;
+	background: #FFF;
+	border: none;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	padding: 0;
+	outline: none;
+}
+.component.photos .slick-dots li.slick-active button {
+	background: #3A506B;
+}
+
+.component.videos {
+	background-image: linear-gradient(#3A506B, #1C2541);
+}
+.component.videos .slick-slide {
+	padding: 10px;
+}
+.component.videos .slick-slide .aspect-ratio {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 51%;
+}
+.component.videos .slick-slide .aspect-ratio iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.component.videos .slick-dots {
+	padding: 0;
+	margin: 10px 0;
+	text-align: center;
+}
+.component.videos .slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.component.videos .slick-dots li button {
+	font-size: 0;
+	background: #e5e5e5;
+	border: none;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	padding: 0;
+	outline: none;
+}
+.component.videos .slick-dots li.slick-active button {
+	background: #000;
+}
+
+footer {
+	background-color: #1C2541;
+	border-top: 4px solid #3A506B;
+	width: 100%;
+	height: 80px;
+}
+footer img {
+	width: 100%;
+}
