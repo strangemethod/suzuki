@@ -1,6 +1,9 @@
 # Suzuki
 ### A minimal, unobtrusive Wordpress starter theme with Gulp and Metabox.
 
+*"In the beginner's mind there are many possibilities, in the expert's midn there are few."*
+*--Shunryu Suzuki*
+
 ## Gulp
 Gulp is used to compile SASS from teh `/sass` directory into style.css.
 
