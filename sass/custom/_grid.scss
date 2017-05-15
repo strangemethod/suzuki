@@ -1,5 +1,5 @@
 * {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 $pad: 20px;
@@ -30,7 +30,7 @@ $pad: 20px;
 }
 
 
-@media screen and (min-width: $mobile-breakpoint){
+@media screen and (min-width: $breakpoint-s){
 
   .col-2-3, .col-1-3 {
     width: 50%;
@@ -52,7 +52,7 @@ $pad: 20px;
 
 }
 
-@media screen and (min-width: $tablet-breakpoint){
+@media screen and (min-width: $breakpoint-m){
 
   .col-2-3 {
     width: 66.66%;

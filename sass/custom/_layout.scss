@@ -13,7 +13,7 @@ $page__width: 1200px;
  * ==================================
  */
 
-@media screen and (min-width: $mobile-breakpoint){
+@media screen and (min-width: $breakpoint-s){
 
 	.container {
 		text-align: initial;
