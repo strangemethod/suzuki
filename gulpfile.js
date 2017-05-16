@@ -12,26 +12,27 @@ var paths = {
 };
 
 gulp.task('sass', function() {
-	return gulp.src(path.join(paths.sass, '/**/*.scss'))
+	return gulp.src(path.join(paths.sass, 'style.scss'))
+		.pipe(concat('style.css'))
 		.pipe(sass({ style: 'expanded', sourceComments: 'map', errLogToConsole: true}))
 		.pipe(autoprefixer('last 2 version', "> 1%", 'ie 8', 'ie 9'))
-		.pipe(concat('style.css'))
-		.pipe(gulp.dest('./public/css'))
-		.pipe(notify({ message: 'SASS compiled!' }));
+		.pipe(gulp.dest('./'))
+		// .pipe(notify({ message: 'SASS compiled!' }))
+		;
 });
 
 gulp.task('scripts', function() {
   return gulp.src(path.join(paths.scripts, '*.js'))
     .pipe(concat('main.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./'))
-	.pipe(notify({ message: 'JS compiled!' }));
+    .pipe(gulp.dest('./'));
+	// .pipe(notify({ message: 'JS compiled!' }))
+	;
 });
 
 
 gulp.task('watch', function() {
-
-	gulp.watch(path.join(paths.sass, '/**/*.scss'), ['sass']);
+	gulp.watch(path.join(paths.sass, '**/*.scss'), ['sass']);
 	gulp.watch(path.join(paths.scripts, '*.js'), ['scripts']);
 
 });

@@ -12,12 +12,27 @@
  * enqueue scripts
  */
 
-function kafkaesque_scripts() {
-    wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '1.5.9', true );
-    wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array('jquery'), '4.0.0', true );
+function suzuki_scripts() {
+    // wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '1.5.9', true );
+    // wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array('jquery'), '4.0.0', true );
 }
 
-add_action( 'wp_enqueue_scripts', 'kafkaesque_scripts' );
+add_action( 'wp_enqueue_scripts', 'suzuki_scripts' );
+
+
+
+/*
+ * enable menus
+ */
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'main-navigation' => __( 'Main Navigation' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 
 
 
@@ -62,26 +77,26 @@ if( ! function_exists('smk_get_template_part') ){
  * Remove Text Editor on specific posts
  */
 
-function hide_editor() {
-    remove_post_type_support('page', 'editor');
-}
-add_action( 'admin_init', 'hide_editor' );
+// function hide_editor() {
+//     remove_post_type_support('page', 'editor');
+// }
+// add_action( 'admin_init', 'hide_editor' );
 
 
 /*
  * Remove custom fields input
  */ 
 
-function remove_post_custom_fields() {
-    remove_meta_box( 'postcustom' , 'post' , 'normal' ); 
-    remove_meta_box( 'postcustom' , 'page' , 'normal' ); 
+// function remove_post_custom_fields() {
+//     remove_meta_box( 'postcustom' , 'post' , 'normal' ); 
+//     remove_meta_box( 'postcustom' , 'page' , 'normal' ); 
 
-}
-add_action( 'admin_menu' , 'remove_post_custom_fields' );
+// }
+// add_action( 'admin_menu' , 'remove_post_custom_fields' );
 
 
 /*
  * Include custom metaboxes
  */ 
 
-include 'metabox.php';
+// include 'metabox.php';

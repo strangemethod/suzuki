@@ -10,24 +10,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<div id="page">
 	
-	<header id="sticky-nav">
+	<header>
 
-		<div id="nav-overlay"></div>
-
-		<div class="content">
+		<div class="container">
 	
-			<h1 class="site-title"><a data-href="hero"><?php bloginfo( 'name' ); ?></a></h1>
-			
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<ul>
-					<li><a href="/see-your-photos">See Your Photos</a></li>
-				</ul>
-			</nav><!-- #site-navigation -->
-		
-			<span id="navicon">&#9776;</span>
+			<h1 class="site-title"><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
+			<?php smk_get_template_part('template-parts/hamburger-menu.php');?>
 
 		</div>
 

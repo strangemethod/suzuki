@@ -1,14 +1,13 @@
 <?php /* Template Name: See Your Photos */ ?>
 
 <?php get_header(); ?>
+
+	<div class="page">
+
+		<div class="component component-s3-gallery container">
+			<?php smk_get_template_part('template-parts/s3-gallery.php');?>
+		</div>
 	
-	<div style="margin-top: 200px"></div>
-	<h1>See Your Photos</h1>
-
-	<?php while ( have_posts() ) : the_post(); ?>
-
-		<?php the_content();?>
-
-	<?php endwhile; ?>
+	</div>
 	
 <?php get_footer(); ?>

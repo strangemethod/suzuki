@@ -9,15 +9,21 @@ Version: 1.0.0
  
 "In the beginner's mind there are many possibilities, in the expert's midn there are few."
 	--Shunryu Suzuki
-
 */
 
 
-@import "variables/variables";
-@import "mixins/mixins-master";
+//vendor
+@import 'normalize';
 
-@import "default/normalize";
+// mixins
+@import 'mixins';
 
-@import "custom/layout";
-@import "custom/grid";
+// variables
+@import 'colors';
+@import 'typography';
 
+// layout
+@import 'grid';
+@import 'layout';
+@import 'header';
+@import 'hero';
