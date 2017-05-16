@@ -1,0 +1,40 @@
+header {
+	background-color: $color-gunmetal;
+
+	.site-title {
+		float: left;
+		display: inline-block;
+		line-height: $header-height;
+		margin: 0;
+	}
+
+	nav {
+		display: none;
+		float: right;
+		
+		@include breakpoint(sm) {
+			display: inline-block;
+		}
+		ul {
+			margin: 0;
+		}
+
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			@include text(md);
+			line-height: $header-height;
+		}
+
+		a {
+			font-weight: bold;
+		}
+	}
+
+	#hamburger-icon {
+
+		@include breakpoint(sm) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+
+// breakpoints
+
+
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 350px) { @content; }
+  }
+ 
+  @else if $class == sm {
+    @media (min-width: 768px) { @content; }
+  }
+ 
+  @else if $class == md {
+    @media (min-width: 992px) { @content; }
+  }
+ 
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
+
+// text size
+
+@mixin text($size) {
+  @if $size == xs {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  @else if $size == sm {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @else if $size == md {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @else if $size == lg {
+      font-size: 36px;
+      line-height: 42px;
+  }
+}
+
+
+// Clearfix
+
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+@mixin clearfix-after() {
+	clear: both;
+}

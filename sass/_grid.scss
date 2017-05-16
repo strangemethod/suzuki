@@ -1,11 +1,9 @@
-* {
-  box-sizing: border-box;
-}
+$grid-pad: 40px;
+$col-pad: 20px;
 
-$pad: 20px;
 
 .grid {
-  margin: 0 0 $pad 0;
+  margin: $grid-pad 0;
   
   &:after {
     /* Or @extend clearfix */
@@ -17,8 +15,8 @@ $pad: 20px;
 
 [class*='col-'] {
   float: left;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: $col-pad;
+  padding-left: $col-pad;
 
   .grid &:last-of-type {
     //padding-right: 0;
@@ -30,7 +28,8 @@ $pad: 20px;
 }
 
 
-@media screen and (min-width: $breakpoint-s){
+
+@include breakpoint(sm) {
 
   .col-2-3, .col-1-3 {
     width: 50%;
@@ -52,7 +51,7 @@ $pad: 20px;
 
 }
 
-@media screen and (min-width: $breakpoint-m){
+@include breakpoint(md) {
 
   .col-2-3 {
     width: 66.66%;

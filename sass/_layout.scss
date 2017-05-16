@@ -1,0 +1,40 @@
+$header-height: 100px;
+$container-width: 1200px;
+$screen-height: calc(100vh - 100px);
+$page-padding: 60px;
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $header-height;
+}
+
+.container { 
+ 	max-width: $container-width;
+ 	margin: 0 auto;
+ 	padding: 0;
+ 	text-align: center;
+}
+
+.page {
+	margin-top: $header-height;
+	padding: $page-padding 0;
+	background-color: $color-gray;
+ 	min-height: $screen-height;
+}
+
+
+/* 
+ * tablet & desktop
+ */
+
+@include breakpoint(sm) {
+
+	.container {
+		text-align: left;
+ 		padding: 0 40px;
+	}
+
+}
