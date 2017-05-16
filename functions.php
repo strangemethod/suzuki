@@ -77,3 +77,10 @@ if( ! function_exists('smk_get_template_part') ){
  */
 
 add_theme_support( 'post-thumbnails' ); 
+
+
+/* 
+ * Disable admin bar when editing
+ */
+
+add_filter('show_admin_bar', '__return_false');
