@@ -13,12 +13,10 @@
  */
 
 function suzuki_scripts() {
-    // wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '1.5.9', true );
-    // wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.pkgd.min.js', array('jquery'), '4.0.0', true );
+    wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'suzuki_scripts' );
-
 
 
 /*
@@ -72,31 +70,10 @@ if( ! function_exists('smk_get_template_part') ){
         $template->render();
     }
 }
- 
-/*
- * Remove Text Editor on specific posts
+
+
+/* 
+ * Enable thumbnail images
  */
 
-// function hide_editor() {
-//     remove_post_type_support('page', 'editor');
-// }
-// add_action( 'admin_init', 'hide_editor' );
-
-
-/*
- * Remove custom fields input
- */ 
-
-// function remove_post_custom_fields() {
-//     remove_meta_box( 'postcustom' , 'post' , 'normal' ); 
-//     remove_meta_box( 'postcustom' , 'page' , 'normal' ); 
-
-// }
-// add_action( 'admin_menu' , 'remove_post_custom_fields' );
-
-
-/*
- * Include custom metaboxes
- */ 
-
-// include 'metabox.php';
+add_theme_support( 'post-thumbnails' ); 

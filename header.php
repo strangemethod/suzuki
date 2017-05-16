@@ -16,8 +16,13 @@
 		<div class="container">
 	
 			<h1 class="site-title"><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
-			<?php smk_get_template_part('template-parts/hamburger-menu.php');?>
+
+			<nav class="main-navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'main-navigation' ) ); ?>
+			</nav>
 
 		</div>
 
 	</header><!-- #masthead -->
+
+	<div class="content">

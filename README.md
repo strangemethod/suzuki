@@ -5,12 +5,8 @@
 *--Shunryu Suzuki*
 
 ## Gulp
-Gulp is used to compile SASS from teh `/sass` directory into style.css.
+Gulp is used to compile:
+- SASS from the `/sass` directory into style.css.
+- JS from the `/js` directory into main.js
 
-Simply run `gulp` in the theme directory to watch for SASS changes.
-
-
-## Metabox
-The author believes that the default Wordpress authoring interface should be considered harmful when used as a CMS for non-blog websites.
-
-Metabox (https://wordpress.org/plugins/meta-box/) is used to create sane content editing environment.
+Simply run `gulp` in the theme directory to watch for SASS and JS changes.

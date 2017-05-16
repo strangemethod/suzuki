@@ -1,11 +1,15 @@
 <?php get_header(); ?>
 
-	<h1>Single Post</h1>
+	<div class="container">
 
-	<?php while ( have_posts() ) : the_post(); ?>
+		<h1>Single Post</h1>
 
-		<?php the_content();?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-	<?php endwhile; ?>
+			<?php the_content();?>
+
+		<?php endwhile; ?>
+	
+	</div>
 	
 <?php get_footer(); ?>

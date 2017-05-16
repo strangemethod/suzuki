@@ -4,26 +4,40 @@ header {
 	.site-title {
 		float: left;
 		display: inline-block;
-		line-height: $header-height;
-		margin: 0;
+		margin: 20px 0 0;
+		padding-left: 20px;
+		
+		@include breakpoint(sm) {
+			line-height: $header-height;
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	nav {
-		display: none;
-		float: right;
-		
+		float: left;
+
 		@include breakpoint(sm) {
-			display: inline-block;
+			float: right;
 		}
+
 		ul {
 			margin: 0;
+			padding-left: 20px;
+			
+			@include breakpoint(sm) {
+				padding: 0;
+			}
 		}
 
 		li {
 			display: inline-block;
-			margin: 0 10px;
+			margin-right: 20px;
 			@include text(md);
-			line-height: $header-height;
+			@include breakpoint(sm) {
+				line-height: $header-height;
+				margin: 0 0 0 20px;
+			}
 		}
 
 		a {
@@ -31,10 +45,4 @@ header {
 		}
 	}
 
-	#hamburger-icon {
-
-		@include breakpoint(sm) {
-			display: none;
-		}
-	}
 }

@@ -11,18 +11,22 @@ header {
 	height: $header-height;
 }
 
+.content {
+	margin-top: $header-height;
+ 	min-height: $screen-height;
+	background-color: $color-gray;
+	padding: 20px 0 $page-padding;
+ 	
+ 	@include breakpoint(sm) {
+		padding: $page-padding 0;
+ 	}
+}
+
 .container { 
  	max-width: $container-width;
  	margin: 0 auto;
  	padding: 0;
  	text-align: center;
-}
-
-.page {
-	margin-top: $header-height;
-	padding: $page-padding 0;
-	background-color: $color-gray;
- 	min-height: $screen-height;
 }
 
 

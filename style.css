@@ -310,24 +310,28 @@ header {
   height: 100px; }
 
 /* line 14, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_layout.scss */
+.content {
+  margin-top: 100px;
+  min-height: calc(100vh - 100px);
+  background-color: #E5E5E5;
+  padding: 20px 0 60px; }
+  @media (min-width: 768px) {
+    /* line 14, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_layout.scss */
+    .content {
+      padding: 60px 0; } }
+
+/* line 25, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_layout.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   text-align: center; }
 
-/* line 21, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_layout.scss */
-.page {
-  margin-top: 100px;
-  padding: 60px 0;
-  background-color: #E5E5E5;
-  min-height: calc(100vh - 100px); }
-
 /* 
  * tablet & desktop
  */
 @media (min-width: 768px) {
-  /* line 35, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_layout.scss */
+  /* line 39, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_layout.scss */
   .container {
     text-align: left;
     padding: 0 40px; } }
@@ -339,33 +343,43 @@ header {
   header .site-title {
     float: left;
     display: inline-block;
-    line-height: 100px;
-    margin: 0; }
-  /* line 11, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
-  header nav {
-    display: none;
-    float: right; }
+    margin: 20px 0 0;
+    padding-left: 20px; }
     @media (min-width: 768px) {
-      /* line 11, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+      /* line 4, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+      header .site-title {
+        line-height: 100px;
+        margin: 0;
+        padding: 0; } }
+  /* line 17, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+  header nav {
+    float: left; }
+    @media (min-width: 768px) {
+      /* line 17, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
       header nav {
-        display: inline-block; } }
-    /* line 18, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+        float: right; } }
+    /* line 24, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
     header nav ul {
-      margin: 0; }
-    /* line 22, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+      margin: 0;
+      padding-left: 20px; }
+      @media (min-width: 768px) {
+        /* line 24, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+        header nav ul {
+          padding: 0; } }
+    /* line 33, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
     header nav li {
       display: inline-block;
-      margin: 0 10px;
+      margin-right: 20px;
       font-size: 20px;
-      line-height: 28px;
-      line-height: 100px; }
-    /* line 29, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+      line-height: 28px; }
+      @media (min-width: 768px) {
+        /* line 33, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
+        header nav li {
+          line-height: 100px;
+          margin: 0 0 0 20px; } }
+    /* line 43, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
     header nav a {
       font-weight: bold; }
-  @media (min-width: 768px) {
-    /* line 34, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_header.scss */
-    header #hamburger-icon {
-      display: none; } }
 
 /* line 2, /Users/andrewb/Projects/ohsnapsmile/wordpress/wp-content/themes/suzuki/sass/_hero.scss */
 .hero-component img {
